@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 889732157543061074}
   - component: {fileID: 3151395930927293080}
   - component: {fileID: 7349381939123244813}
+  - component: {fileID: -891063595888104860}
   m_Layer: 0
   m_Name: mushrooms
-  m_TagString: Untagged
+  m_TagString: Beacon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +98,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc1c8e87fa0cfd48b779862122ee833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!65 &-891063595888104860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3511960635349386061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.524246, y: 0.295, z: 0.518812}
+  m_Center: {x: 0, y: 0.1475, z: 0}
