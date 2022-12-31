@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoxMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 1f;
     public GameObject prefab;
     private GameObject movePointObj;
     public Transform movePoint;
@@ -26,7 +26,7 @@ public class BoxMovement : MonoBehaviour
     }
 
     RaycastHit[] hits;
-    public void Push(Vector3 direction)
+    public bool Push(Vector3 direction)
     {
         hits = Physics.RaycastAll(movePoint.position, direction, 1.2f, whatStopsMovement);
         bool flag = true;
@@ -44,5 +44,6 @@ public class BoxMovement : MonoBehaviour
         {
             movePoint.position += direction;
         }
+        return flag;
     }
 }
